@@ -1,3 +1,2 @@
 # 👋 Hey, I’m Angelo
-Creative technologist exploring AI, ethical security, and symbolic reasoning.  
-Building tools for humans, not just machines.
+Security systems architect & creative technologist — building practical, evidence-driven tools for AI safety, DFIR, and secure automation.
