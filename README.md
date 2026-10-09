@@ -9,6 +9,9 @@ Bridging **low-level systems engineering** (kernel tracing, binary reversing, me
 
 I contribute verified bug fixes, kernel tracing updates, memory safety patches, and regression suites to foundational open-source security and reversing tools:
 
+#### 🩸 [angr/angr](https://github.com/angr/angr) (Binary Analysis & Symbolic Execution Platform)
+* **[PR #7353](https://github.com/angr/angr/pull/7353)**: Fixed `IndexError: bytearray index out of range` during state merging when symbolic memory objects span across 4096-byte page boundaries (Issues #6314 & #3807). Enforced source-level candidate offset clamping in `_ultra_changed_candidates`, aligned concrete chunk stepping, added defensive bounds guards in `_contains`, and expanded the test suite in `tests/storage/test_memory_merge.py`.
+
 #### ⚡ [iovisor/bcc](https://github.com/iovisor/bcc) (BPF Compiler Collection)
 * **[PR #5546](https://github.com/iovisor/bcc/pull/5546)**: Migrated `tools/killsnoop` from brittle `sys_kill` kprobes to stable kernel tracepoints (`sys_enter_kill`, `tkill`, `tgkill`). Resolved breakage introduced in Linux 5.11+ and brought the Python implementation into parity with modern libbpf-tools.
 
@@ -53,5 +56,5 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 ### 🧰 Technical Arsenal
 
 * **Languages & Systems:** C, Python, Rust, Bash, Linux Kernel & Tracing (eBPF/BCC, tracepoints, kprobes), QEMU/KVM
-* **Binary & Reverse Engineering:** radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
+* **Binary & Reverse Engineering:** angr (Symbolic Execution, UltraPage Memory), radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
 * **AI Security & Protocols:** Model Context Protocol (MCP), LLM Guardrails, AST Parsing, SARIF, NIST AI RMF, OWASP LLM Top 10, MITRE ATT&CK
