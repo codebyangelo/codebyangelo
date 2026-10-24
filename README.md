@@ -10,7 +10,7 @@ Bridging **low-level systems engineering** (kernel tracing, binary reversing, me
 I contribute verified bug fixes, kernel tracing updates, memory safety patches, and regression suites to foundational open-source security and reversing tools:
 
 #### 🩸 [angr/angr](https://github.com/angr/angr) (Binary Analysis & Symbolic Execution Platform)
-* **[PR #7353](https://github.com/angr/angr/pull/7353)**: Fixed `IndexError: bytearray index out of range` during state merging when symbolic memory objects span across 4096-byte page boundaries (Issues #6314 & #3807). Enforced source-level candidate offset clamping in `_ultra_changed_candidates`, aligned concrete chunk stepping, added defensive bounds guards in `_contains`, and expanded the test suite in `tests/storage/test_memory_merge.py`.
+* **[PR #7353](https://github.com/angr/angr/pull/7353)**: Resolved unhandled `IndexError: bytearray index out of range` in `UltraPage` during symbolic memory state merging across 4096-byte page boundaries (Issue #6314, superseding stale PR #6315). Enforced candidate offset clamping in `_ultra_changed_candidates`, aligned concrete chunk stepping, and hardened `_contains` with defensive out-of-bounds guards; authored comprehensive multi-page regression coverage in `tests/storage/test_memory_merge.py`.
 
 #### ⚡ [iovisor/bcc](https://github.com/iovisor/bcc) (BPF Compiler Collection)
 * **[PR #5546](https://github.com/iovisor/bcc/pull/5546)**: Migrated `tools/killsnoop` from brittle `sys_kill` kprobes to stable kernel tracepoints (`sys_enter_kill`, `tkill`, `tgkill`). Resolved breakage introduced in Linux 5.11+ and brought the Python implementation into parity with modern libbpf-tools.
