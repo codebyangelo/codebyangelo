@@ -13,12 +13,13 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 * **[PR #7353](https://github.com/angr/angr/pull/7353)**: Resolved unhandled `IndexError: bytearray index out of range` in `UltraPage` during symbolic memory state merging across 4096-byte page boundaries (Issue #6314, superseding stale PR #6315). Enforced candidate offset clamping in `_ultra_changed_candidates`, aligned concrete chunk stepping, and hardened `_contains` with defensive out-of-bounds guards; authored comprehensive multi-page regression coverage in `tests/storage/test_memory_merge.py`.
 
 #### ⚡ [iovisor/bcc](https://github.com/iovisor/bcc) (BPF Compiler Collection)
-* **[PR #5546](https://github.com/iovisor/bcc/pull/5546)**: Migrated `tools/killsnoop` from brittle `sys_kill` kprobes to stable kernel tracepoints (`sys_enter_kill`, `tkill`, `tgkill`). Resolved breakage introduced in Linux 5.11+ and brought the Python implementation into parity with modern libbpf-tools.
+* **[PR #5546](https://github.com/iovisor/bcc/pull/5546)**: Migrated `tools/killsnoop` from brittle `sys_kill` kprobes to stable kernel tracepoints (`sys_enter_kill`, `tkill`, `tgkill`). Resolved breakage introduced in Linux 5.11+ (Issue #3592) and brought the Python implementation into parity with modern libbpf-tools.
 
 #### 🔍 [radareorg/radare2](https://github.com/radareorg/radare2) & [radare2-testbins](https://github.com/radareorg/radare2-testbins)
-* **[PR #26852](https://github.com/radareorg/radare2/pull/26852)**: Resolved SIGSEGV memory corruption in the PDB parser for enums with modified underlying types (`eLF_MODIFIER` pointer cast fix).
+* **[PR #27060](https://github.com/radareorg/radare2/pull/27060)**: Resolved Heap Out-of-Bounds read (CWE-125) and buffer desynchronization in `rabin2` ELF section resize (`-O r`) and permission patching (`-O p`), enforcing fail-closed parameter validation and cross-endian safety (Issue #15449).
+* **[PR #26852](https://github.com/radareorg/radare2/pull/26852)**: Resolved SIGSEGV memory corruption in the PDB parser for enums with modified underlying types (`eLF_MODIFIER` pointer cast fix, Issue #12924).
 * **[PR #26862](https://github.com/radareorg/radare2/pull/26862)** & **[testbins #146](https://github.com/radareorg/radare2-testbins/pull/146)**: Built and upstreamed the minimal binary PDB test fixture and unit tests for type parsing.
-* **[PR #26771](https://github.com/radareorg/radare2/pull/26771)**, **[PR #26617](https://github.com/radareorg/radare2/pull/26617)** & **[PR #26606](https://github.com/radareorg/radare2/pull/26606)**: Multi-stage refactor of math expression error handling across `cmd_seek` and `cmd_write` core commands (#23362), eliminating silent invalid writes and adding unit test coverage.
+* **[PR #26771](https://github.com/radareorg/radare2/pull/26771)** ([commit `704e2e8`](https://github.com/radareorg/radare2/commit/704e2e853ede810a9ba20f878e060f1da89bf44c)), **[PR #26617](https://github.com/radareorg/radare2/pull/26617)** & **[PR #26606](https://github.com/radareorg/radare2/pull/26606)**: Multi-stage refactor of math expression error handling across `cmd_seek` and `cmd_write` core commands (Issue #23362), eliminating silent invalid writes and adding unit test coverage.
 
 ---
 
