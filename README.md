@@ -1,5 +1,8 @@
 # 👋 Hi, I'm Angelo
 
+[![radare2 contributor](https://img.shields.io/badge/radare2-contributor-e03131?style=flat&labelColor=11120f)](https://github.com/radareorg/radare2/pulls?q=is%3Apr+author%3Acodebyangelo+is%3Amerged)
+[![angr contributor](https://img.shields.io/badge/angr-contributor-a81d24?style=flat&labelColor=11120f)](https://github.com/angr/angr/pulls?q=is%3Apr+author%3Acodebyangelo+is%3Amerged)
+[![Linux BCC contributor](https://img.shields.io/badge/Linux%20BCC-contributor-e67700?style=flat&labelColor=11120f)](https://github.com/iovisor/bcc/pulls?q=is%3Apr+author%3Acodebyangelo+is%3Amerged)
 [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/codebyangelo/badge.svg)](https://hub.xerj.org/contributors/codebyangelo)
 
 **Systems Security Engineer & AI Agent Defense Architect**
