@@ -56,6 +56,8 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 
 ### 🧰 Technical Arsenal
 
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/codebyangelo/badge.svg)](https://hub.xerj.org/contributors/codebyangelo)
+
 * **Languages & Systems:** C, Python, Rust, Bash, Linux Kernel & Tracing (eBPF/BCC, tracepoints, kprobes), QEMU/KVM
 * **Binary & Reverse Engineering:** angr (Symbolic Execution, UltraPage Memory), radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
 * **AI Security & Protocols:** Model Context Protocol (MCP), LLM Guardrails, AST Parsing, SARIF, NIST AI RMF, OWASP LLM Top 10, MITRE ATT&CK
