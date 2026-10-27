@@ -1,5 +1,7 @@
 # 👋 Hi, I'm Angelo
 
+[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/codebyangelo/badge.svg)](https://hub.xerj.org/contributors/codebyangelo)
+
 **Systems Security Engineer & AI Agent Defense Architect**
 Bridging **low-level systems engineering** (kernel tracing, binary reversing, memory safety) with **deterministic security guardrails for autonomous AI agents** (Model Context Protocol, AST verification, and fail-closed sidecars).
 
@@ -55,8 +57,6 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 ---
 
 ### 🧰 Technical Arsenal
-
-[![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/codebyangelo/badge.svg)](https://hub.xerj.org/contributors/codebyangelo)
 
 * **Languages & Systems:** C, Python, Rust, Bash, Linux Kernel & Tracing (eBPF/BCC, tracepoints, kprobes), QEMU/KVM
 * **Binary & Reverse Engineering:** angr (Symbolic Execution, UltraPage Memory), radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
