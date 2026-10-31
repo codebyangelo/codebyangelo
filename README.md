@@ -59,7 +59,7 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 
 ---
 
-###Technical Arsenal
+### Technical Arsenal
 
 * **Languages & Systems:** C, Python, Rust, Bash, Linux Kernel & Tracing (eBPF/BCC, tracepoints, kprobes), QEMU/KVM
 * **Binary & Reverse Engineering:** angr (Symbolic Execution, UltraPage Memory), radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
