@@ -5,7 +5,7 @@
 [![Linux BCC contributor](https://img.shields.io/badge/Linux%20BCC-contributor-7c3aed?style=flat&labelColor=11120f)](https://github.com/iovisor/bcc/pulls?q=is%3Apr+author%3Acodebyangelo+is%3Amerged)
 [![XERJ Corpus Hub contributor](https://hub.xerj.org/contributors/codebyangelo/badge.svg)](https://hub.xerj.org/contributors/codebyangelo)
 
-**Systems Security Engineer & AI Agent Defense Architect**
+**Systems Security Engineer & AI Agent Defense Architect**  
 Bridging **low-level systems engineering** (kernel tracing, binary reversing, memory safety) with **deterministic security guardrails for autonomous AI agents** (Model Context Protocol, AST verification, and fail-closed sidecars).
 
 ---
@@ -21,6 +21,7 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 * **[PR #5546](https://github.com/iovisor/bcc/pull/5546)**: Migrated `tools/killsnoop` from brittle `sys_kill` kprobes to stable kernel tracepoints (`sys_enter_kill`, `tkill`, `tgkill`). Resolved breakage introduced in Linux 5.11+ (Issue #3592) and brought the Python implementation into parity with modern libbpf-tools.
 
 #### [radareorg/radare2](https://github.com/radareorg/radare2) & [radare2-testbins](https://github.com/radareorg/radare2-testbins)
+* **[PR #27270](https://github.com/radareorg/radare2/pull/27270)**: Resolved intra-page math bug in `stream_file_get_size` (`libr/bin/format/pdb/stream_file.h`) that over-reported remaining unread stream bytes by up to 4KB per page traversed, eliminating fail-open buffer boundary desynchronization and potential Heap Out-of-Bounds reads in multi-page PDB streams; authored in-tree unit test `test_pdb_stream_file_size` in `test/unit/test_pdb.c`.
 * **[PR #27060](https://github.com/radareorg/radare2/pull/27060)**: Resolved Heap Out-of-Bounds read (CWE-125) and buffer desynchronization in `rabin2` ELF section resize (`-O r`) and permission patching (`-O p`), enforcing fail-closed parameter validation and cross-endian safety (Issue #15449).
 * **[PR #26852](https://github.com/radareorg/radare2/pull/26852)**: Resolved SIGSEGV memory corruption in the PDB parser for enums with modified underlying types (`eLF_MODIFIER` pointer cast fix, Issue #12924).
 * **[PR #26862](https://github.com/radareorg/radare2/pull/26862)** & **[testbins #146](https://github.com/radareorg/radare2-testbins/pull/146)**: Built and upstreamed the minimal binary PDB test fixture and unit tests for type parsing.
@@ -35,6 +36,12 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 * **stdio MCP Security Proxy**: Intercepts and validates Model Context Protocol tool invocations using per-session sliding-window tracking.
 * **Hybrid Defense**: Pairs local deterministic "Iron Dome" rules with LLM intelligence under strict **fail-closed** security invariants.
 * Built with concurrency-safe rate limiters, Trivy CI container scanning, and structured telemetry.
+
+#### [Project Moray](https://github.com/codebyangelo/project-moray)
+*An ultra-lightweight, OS-level Ring 0 eBPF containment daemon and in-kernel security subsystem.*
+* **Kernel-Level Strike Hooks**: Sits beneath user-space agent frameworks to terminate compromised processes, sever sockets, and drop network frames in Ring 0 via BPF-LSM and XDP.
+* **Fail-Closed Map Quarantine**: Pinned VFS map architecture linking user-space detections (Project Lobster) directly to Ring 0 enforcement with 0ms local lookups.
+* Validated with an 82-test hermetic invariant suite and live MicroVM KVM kernel verification.
 
 #### [Project Mantis](https://github.com/codebyangelo/project-mantis)
 *Autonomous DFIR framework for SIFT Workstations orchestrating memory forensics.*
@@ -61,6 +68,9 @@ I contribute verified bug fixes, kernel tracing updates, memory safety patches, 
 
 ### Technical Arsenal
 
-* **Languages & Systems:** C, Python, Rust, Bash, Linux Kernel & Tracing (eBPF/BCC, tracepoints, kprobes), QEMU/KVM
-* **Binary & Reverse Engineering:** angr (Symbolic Execution, UltraPage Memory), radare2, Volatility 3, GDB, PDB internals, Memory Layout Analysis
-* **AI Security & Protocols:** Model Context Protocol (MCP), LLM Guardrails, AST Parsing, SARIF, NIST AI RMF, OWASP LLM Top 10, MITRE ATT&CK
+* **Languages & Kernel:** C (radare2 core, libbpf), eBPF / BPF C (BCC tracepoints, BPF-LSM, XDP), Python 3 (multithreading, AST parsing, ctypes), Bash/POSIX Shell, x86-64 Assembly (System V AMD64 ABI, register packing, `pt_regs`), Rust
+* **Security & Vulnerability Analysis:** CWE Remediation (CWE-125 Heap OOB, CWE-843 Type Confusion, Integer Underflow), Memory Safety Verification (AddressSanitizer / ASan), Reverse Engineering (radare2, rabin2), Symbolic Execution (angr, Claripy), Fail-Closed Architecture, MITRE ATT&CK
+* **AI Security & Agent Defense:** Model Context Protocol (MCP stdio / JSON-RPC 2.0), LLM Security Sidecars & Proxies, Deterministic In-Kernel Guardrails (BPF-LSM), Anti-Hallucination Grounding Layers, AST Sandboxing, NIST AI RMF, OWASP Top 10 for LLMs
+* **AI-Assisted Engineering & Verification:** AI-assisted codebase navigation, rapid patch drafting under strict human-in-the-loop verification (compiler validation, AddressSanitizer reproducers, differential CI zero-regression scoring)
+* **Systems, Formats & DFIR:** Linux Internals (Debian, Alpine, Mint, SIFT, PRoot), Kernel Tracing (iovisor/bcc), Memory & Disk Forensics (Volatility 3, The Sleuth Kit / fls / icat), Binary Formats (Microsoft PDB / MSF 7.00, CodeView TPI, ELF, MBR/GPT), QEMU/KVM
+* **Protocols & Toolchains:** SARIF 2.1.0, Build Systems (GCC, Clang, TCC, Meson, Ninja, Make), Differential CI & QA (Pytest, Ruff, Pylint, Pyright, GitHub Actions), Networking (TCP/IP Sockets, UFW, nftables, SD-WAN)
