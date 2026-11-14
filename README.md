@@ -17,7 +17,7 @@
 </a>
                                                                   <br/><br/>                                                        
 <!-- SOCIAL & CONTACT CHANNELS -->
-<a href="https://www.linkedin.com/in/codebyangelo/">
+<a href="https://www.linkedin.com/in/angelo-ayton/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square"/>
 </a>
 <a href="mailto:angeloayton@gmail.com">
