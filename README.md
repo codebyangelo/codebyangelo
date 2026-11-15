@@ -15,15 +15,7 @@
 <a href="https://github.com/angr/angr/pulls?q=is%3Apr+author%3Acodebyangelo+is%3Amerged">                                             <img src="https://img.shields.io/badge/angr-Upstream%20Contributor-D97706?style=for-the-badge"/>                                  </a>                                                              <a href="https://hub.xerj.org/contributors/codebyangelo">
   <img src="https://img.shields.io/badge/XERJ-Corpus%20Contributor-00FF66?style=for-the-badge&labelColor=0B0F19"/>
 </a>
-                                                                  <br/><br/>                                                        
-<!-- SOCIAL & CONTACT CHANNELS -->
-<a href="https://www.linkedin.com/in/angelo-ayton/">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square"/>
-</a>
-<a href="mailto:angeloayton@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square"/>                                                          </a>                                                              <a href="https://github.com/codebyangelo">
-  <img src="https://komarev.com/ghpvc/?username=codebyangelo&label=Profile%20Views&color=00FF66&style=flat-square" alt="Profile Views"/>
-</a>                                                              
+
 </div>
                                                                   <br/>                                                         
                                           
@@ -135,6 +127,12 @@ Systems Security Engineer specializing in bridging **low-level systems engineeri
 <div align="center">                                                                                                                <img src="https://github-readme-streak-stats-eight.vercel.app/?user=codebyangelo&theme=tokyonight&hide_border=true&background=000000&stroke=00FF66&ring=00FF66&fire=00FF66&currStreakLabel=00FF66" width="60%"/>                                                                                                                          <br/><br/>
 
 <img src="https://raw.githubusercontent.com/codebyangelo/codebyangelo/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="85%"/>
+
+<br/><br/>
+
+<p align="center">
+  <em>Currently open to full-time engineering opportunities in <strong>Systems Security, Binary Reverse Engineering, and AI Agent Infrastructure Defense</strong> (Remote Worldwide / EMEA or Relocation) — reach out via <a href="mailto:angeloayton@gmail.com">Email</a> or <a href="https://www.linkedin.com/in/angelo-ayton/">LinkedIn</a> to connect.</em>
+</p>
 
 <br/>
 
