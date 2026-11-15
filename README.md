@@ -131,7 +131,7 @@ Systems Security Engineer specializing in bridging **low-level systems engineeri
 <br/><br/>
 
 <p align="center">
-  <em>Currently open to full-time engineering opportunities in <strong>Systems Security, Binary Reverse Engineering, and AI Agent Infrastructure Defense</strong> (Remote Worldwide / EMEA or Relocation) - reach out via <a href="mailto:angeloayton@gmail.com">Email</a> or <a href="https://www.linkedin.com/in/angelo-ayton/">LinkedIn</a> to connect.</em>
+  <em>Currently open to full-time cybersecurity engineering opportunities in <strong>Systems Security, Binary Reverse Engineering, and AI Agent Infrastructure Defense</strong> (Remote Worldwide / EMEA or Relocation) - reach out via <a href="mailto:angeloayton@gmail.com">Email</a> or <a href="https://www.linkedin.com/in/angelo-ayton/">LinkedIn</a> to connect.</em>
 </p>
 
 <br/>
