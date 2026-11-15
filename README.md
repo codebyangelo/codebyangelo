@@ -134,7 +134,7 @@ Systems Security Engineer specializing in bridging **low-level systems engineeri
 ## Live Activity &amp; Velocity                                   
 <div align="center">                                                                                                                <img src="https://github-readme-streak-stats-eight.vercel.app/?user=codebyangelo&theme=tokyonight&hide_border=true&background=000000&stroke=00FF66&ring=00FF66&fire=00FF66&currStreakLabel=00FF66" width="60%"/>                                                                                                                          <br/><br/>
 
-<img src="https://raw.githubusercontent.com/platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="85%"/>
+<img src="https://raw.githubusercontent.com/codebyangelo/codebyangelo/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="85%"/>
 
 <br/>
 
