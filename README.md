@@ -124,7 +124,9 @@ Systems Security Engineer specializing in bridging **low-level systems engineeri
 | **Agent Defense &amp; MCP** | **Model Context Protocol (MCP)** stdio / JSON-RPC 2.0, LLM Security Sidecars, Deterministic In-Kernel Guardrails, Anti-Hallucination Grounding, AST Sandboxes, **NIST AI RMF**, **OWASP Top 10 LLM** |                                  | **Forensics &amp; Systems** | **Linux Internals** (Debian, Alpine, Mint, SIFT, PRoot), **Kernel Tracing** (iovisor/bcc), **Memory/Disk Forensics** (Volatility 3, TSK fls/icat), **Binary Formats** (PDB / MSF 7.00, CodeView, ELF, MBR/GPT), **QEMU/KVM** |          | **Verification &amp; CI/CD** | **SARIF 2.1.0**, Build Systems (GCC, Clang, TCC, Meson, Ninja, Make), **Differential CI/CD** (Pytest, Ruff, Pylint, Pyright, GitHub Actions), Network Security (TCP/IP, UFW, nftables) |                                                                                                                 </div>                                                            
 ---                                                                                                                             
 ## Live Activity &amp; Velocity                                   
-<div align="center">                                                                                                                <img src="https://streak-stats.demolab.com/?user=codebyangelo&theme=tokyonight&hide_border=true&background=000000&stroke=00FF66&ring=00FF66&fire=00FF66&currStreakLabel=00FF66" width="60%"/>                                                                                                                          <br/><br/>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/codebyangelo/codebyangelo/output/streak-stats.svg" alt="GitHub Streak Stats" width="60%"/>
+  <br/><br/>
 
 <img src="https://raw.githubusercontent.com/codebyangelo/codebyangelo/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="85%"/>
 

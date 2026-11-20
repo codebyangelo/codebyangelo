@@ -25,7 +25,14 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push github-contribution-grid-snake.svg to output branch
+      - name: Generate streak-stats.svg
+        uses: DenverCoder1/github-readme-streak-stats@v1
+        with:
+          options: "user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=000000&stroke=00FF66&ring=00FF66&fire=00FF66&currStreakLabel=00FF66"
+          path: dist/streak-stats.svg
+          token: ${{ secrets.STREAK_STATS_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Push artifacts to output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
